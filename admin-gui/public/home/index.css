@@ -1,0 +1,7 @@
+.btn-logout{
+    border: none;
+    background-color: white;
+}
+.form-group label{
+    display: block;
+}

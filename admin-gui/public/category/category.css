@@ -1,0 +1,69 @@
+input{
+    display: none;
+}
+.btn-menu{
+    background: rgb(158, 4, 4);
+    color: white;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    
+
+}
+.modal-header{
+    background-color: rgb(123, 123, 232);
+    color: white;
+}
+.modal{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+    display: none;
+
+}
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+#control-modal-cate-add:checked ~ .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fade .6s forwards;
+    opacity: 0;
+  }
+.modal-content {
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 5px;
+  }
+.modal-close {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    top: -1px;
+    right: -10px;
+    cursor: pointer;
+  }
+  .btn-close{
+    cursor: pointer;
+    position: absolute;
+
+  }
+  .modal-body {
+  padding: 12px 24px 24px;
+}
